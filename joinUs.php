@@ -54,7 +54,7 @@
 				<div class="inner">
 					<div class="container">
 						<h2>Sign Up!</h2>
-							<form method="post" action="#">
+							<form method="post" action="joinUs.php">
 										<div class="row uniform">
 											<div class="12u$">
 												<input type="text" name="first-name" id="first-name" value="" placeholder="First Name" />
@@ -63,7 +63,7 @@
 												<input type="text" name="last-name" id="last-name" value="" placeholder="Last Name" />
 											</div>
 											<div class="12u$">
-												<input type="text" name="username" id="username" value="" placeholder="Username" />
+										        <input type="text" name="username" id="username" value="" placeholder="Username" />
 											</div>
 											<div class="12u$">
 												<input type="email" name="email" id="email" value="" placeholder="Email" />
