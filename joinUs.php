@@ -100,14 +100,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	$firstname = mysql_real_escape_string($_POST['firstname']);
 	$lastname = mysql_real_escape_string($_POST['lastname']);
 	$password = mysql_real_escape_string($_POST['password']);
+	$address = mysql_real_escape_string($_POST['address']);
 	$email = mysql_real_escape_string($_POST['email']);
 	$city = mysql_real_escape_string($_POST['city']);
 	$state = mysql_real_escape_string($_POST['state']);
 	$zipcode = mysql_real_escape_string($_POST['zipcode']);
     $bool = true;
-	mysql_connect("localhost", "root","") or die(mysql_error()); //Connect to server
+	mysql_connect("localhost", "root") or die(mysql_error()); //Connect to server
 	mysql_select_db("FirstDataBase") or die("Cannot connect to database"); //Connect to database
-	$query = mysql_query("Select * from users"); //Query the users table
+	$query = mysql_query("Select * from userinfo"); //Query the users table
 	while($row = mysql_fetch_array($query)) //display all rows from query
 	{
 		$table_users = $row['username']; // the first username row is passed on to $table_users, and so on until the query is finished
@@ -120,7 +121,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	}
 	if($bool) // checks if bool is true
 	{
-		mysql_query("INSERT INTO userinfo (firstname,lastname,username,password,email,city,state,zipcode) VALUES ('$firstname','$lastname','$username','$password',$email,$city,$state,$zipcode)"); //Inserts the value to table users
+		mysql_query("INSERT INTO userinfo(firstname, lastname, username, password, email, address, city, state, zipcode) VALUES ('$firstname','$lastname','$username','$password','$email','$address','$city','$state','$zipcode')"); //Inserts the value to table users
+		
 		Print '<script>alert("Successfully joined!");</script>'; // Prompts the user
 		Print '<script>window.location.assign("joinUs.php");</script>'; // redirects to joinUs.php
 	}
