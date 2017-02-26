@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 26, 2017 at 04:56 AM
+-- Generation Time: Feb 26, 2017 at 10:40 PM
 -- Server version: 10.1.21-MariaDB
 -- PHP Version: 5.6.30
 
@@ -27,13 +27,15 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `userinfo` (
-  `Name` char(20) NOT NULL,
-  `Password` char(20) NOT NULL,
-  `Email` char(30) NOT NULL,
-  `Address` char(40) NOT NULL,
-  `City` char(15) NOT NULL,
-  `State` char(2) NOT NULL,
-  `Zip Code` int(5) NOT NULL
+  `firstname` char(20) NOT NULL,
+  `lastname` char(20) NOT NULL,
+  `username` char(20) NOT NULL,
+  `password` char(20) NOT NULL,
+  `email` char(30) NOT NULL,
+  `address` char(40) NOT NULL,
+  `city` char(15) NOT NULL,
+  `state` char(2) NOT NULL,
+  `zipcode` int(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
