@@ -33,7 +33,7 @@
 							<ul>
 								<li><a href="index.html">Home</a></li>
 								<li><a href="aboutUs.html">About Us</a></li>
-								<li><a href="joinUs.html">Join Us</a></li>
+								<li><a href="joinUs.php">Join Us</a></li>
 							</ul>
 						</div>
 					</li>
