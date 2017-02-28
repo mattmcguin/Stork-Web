@@ -56,35 +56,103 @@
 						<h2>Sign Up!</h2>
 							<form method="post" action="joinUs.php">
 										<div class="row uniform">
-											<div class="12u$">
-												<input type="text" name="first-name" id="first-name" value="<?php echo isset($_POST['first-name']) ? $_POST['first-name'] : '' ?>" placeholder="First Name" />
+											<div class="6u$">
+												<input type="text" name="first-name" id="first-name" required="true" value="<?php echo isset($_POST['first-name']) ? $_POST['first-name'] : '' ?>" placeholder="First Name" />
+											</div>
+											<div class="6u$" style="clear: none;">
+												<input type="text" name="last-name" id="last-name" required="true" value="<?php echo isset($_POST['last-name']) ? $_POST['last-name'] : '' ?>" placeholder="Last Name" />
 											</div>
 											<div class="12u$">
-												<input type="text" name="last-name" id="last-name" value="<?php echo isset($_POST['last-name']) ? $_POST['last-name'] : '' ?>" placeholder="Last Name" />
+										        <input type="text" name="username" id="username" required="true" value="<?php echo isset($_POST['username']) ? $_POST['username'] : '' ?>" placeholder="Username" />
 											</div>
 											<div class="12u$">
-										        <input type="text" name="username" id="username" value="<?php echo isset($_POST['username']) ? $_POST['username'] : '' ?>" placeholder="Username" />
+												<input style="-moz-appearance: none;
+															-webkit-appearance: none;
+															-ms-appearance: none;
+															appearance: none;
+															border-radius: 3px;
+															font-size: 1.0rem;
+															border: none;
+															color: inherit;
+															display: block;
+															outline: 0;
+															padding: 0 1em;
+															text-decoration: none;
+															height: 44px;
+															box-shadow: none;
+															width: 100%;" type="password" name="password" id="password" required="true" value="<?php echo isset($_POST['password']) ? $_POST['password'] : '' ?>" placeholder="Password" />
 											</div>
 											<div class="12u$">
-												<input type="password" name="password" id="password" value="<?php echo isset($_POST['password']) ? $_POST['password'] : '' ?>" placeholder="Password" />
+												<input type="email" name="email" id="email" required="true" value="<?php echo isset($_POST['email']) ? $_POST['email'] : '' ?>" placeholder="Email" />
 											</div>
 											<div class="12u$">
-												<input type="email" name="email" id="email" value="<?php echo isset($_POST['email']) ? $_POST['email'] : '' ?>" placeholder="Email" />
+												<input type="text" name="address" id="address" required="true" value="<?php echo isset($_POST['address']) ? $_POST['address'] : '' ?>" placeholder="Street Address" />
 											</div>
 											<div class="12u$">
-												<input type="text" name="address" id="address" value="<?php echo isset($_POST['address']) ? $_POST['address'] : '' ?>" placeholder="Street Address" />
+												<input type="text" name="city" id="city" required="true" value="<?php echo isset($_POST['city']) ? $_POST['city'] : '' ?>" placeholder="City" />
+											</div>
+											<div class="6u$">
+												<div class="select-wrapper">
+													<select name="state" id="state" required="true">
+														<option value="AL">Alabama</option>
+														<option value="AK">Alaska</option>
+														<option value="AZ">Arizona</option>
+														<option value="AR">Arkansas</option>
+														<option value="CA">California</option>
+														<option value="CO">Colorado</option>
+														<option value="CT">Connecticut</option>
+														<option value="DE">Delaware</option>
+														<option value="DC">District Of Columbia</option>
+														<option value="FL">Florida</option>
+														<option value="GA">Georgia</option>
+														<option value="HI">Hawaii</option>
+														<option value="ID">Idaho</option>
+														<option value="IL">Illinois</option>
+														<option value="IN">Indiana</option>
+														<option value="IA">Iowa</option>
+														<option value="KS">Kansas</option>
+														<option value="KY">Kentucky</option>
+														<option value="LA">Louisiana</option>
+														<option value="ME">Maine</option>
+														<option value="MD">Maryland</option>
+														<option value="MA">Massachusetts</option>
+														<option value="MI">Michigan</option>
+														<option value="MN">Minnesota</option>
+														<option value="MS">Mississippi</option>
+														<option value="MO">Missouri</option>
+														<option value="MT">Montana</option>
+														<option value="NE">Nebraska</option>
+														<option value="NV">Nevada</option>
+														<option value="NH">New Hampshire</option>
+														<option value="NJ">New Jersey</option>
+														<option value="NM">New Mexico</option>
+														<option value="NY">New York</option>
+														<option value="NC">North Carolina</option>
+														<option value="ND">North Dakota</option>
+														<option value="OH">Ohio</option>
+														<option value="OK">Oklahoma</option>
+														<option value="OR">Oregon</option>
+														<option value="PA">Pennsylvania</option>
+														<option value="RI">Rhode Island</option>
+														<option value="SC">South Carolina</option>
+														<option value="SD">South Dakota</option>
+														<option value="TN">Tennessee</option>
+														<option value="TX">Texas</option>
+														<option value="UT">Utah</option>
+														<option value="VT">Vermont</option>
+														<option value="VA">Virginia</option>
+														<option value="WA">Washington</option>
+														<option value="WV">West Virginia</option>
+														<option value="WI">Wisconsin</option>
+														<option value="WY">Wyoming</option>
+													</select>
+												</div>
+											</div>
+											<div class="6u$" style="clear: none;">
+												<input type="text" name="zip-code" id="zip-code" required="true" value="<?php echo isset($_POST['zip-code']) ? $_POST['zip-code'] : '' ?>" placeholder="Zip Code" />
 											</div>
 											<div class="12u$">
-												<input type="text" name="city" id="city" value="<?php echo isset($_POST['city']) ? $_POST['city'] : '' ?>" placeholder="City" />
-											</div>
-											<div class="6u 12u$(xsmall)">
-												<input type="text" name="state" id="state" value="<?php echo isset($_POST['state']) ? $_POST['state'] : '' ?>" placeholder="State" />
-											</div>
-											<div class="6u 12u$(xsmall)">
-												<input type="text" name="zip-code" id="zip-code" value="<?php echo isset($_POST['zip-code']) ? $_POST['zip-code'] : '' ?>" placeholder="Zip Code" />
-											</div>
-											<div class="12u$">
-												<input type="checkbox" id="agreement" name="agreement">
+												<input type="checkbox" id="agreement" name="agreement" required="true">
 												<label for="agreement">I agree to the terms and services.</label>
 											</div>
 											<div  class="12u$">
@@ -112,50 +180,41 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	$agreement = mysql_real_escape_string($_POST['agreement']);
 	$bool = true;
 
-	if ($username == NULL || $firstname == NULL || 
-		$lastname == NULL || $password == NULL || 
-		$address == NULL || $email == NULL || 
-		$city == NULL || $state == NULL ||
-		$zipcode == NULL || $agreement == NULL) {
-			Print '<script>alert("You must fill out the form completely!");</script>'; // Prompts the user
+	if (1 === preg_match('~[0-9]~', $firstname) || 
+		1 === preg_match('~[0-9]~', $lastname) ||
+		1 === preg_match('/[^a-z]/i',$city)){
+		Print '<script>alert("Names and cities should not contain numbers!");</script>'; // Prompts the user
+	} else {
+		if (1 != preg_match('~[.]~', $email) || 1 != preg_match('~[@]~', $email)) {
+			Print '<script>alert("Email must contain at least 1 period and one @ symbol!");</script>'; // Prompts the user
 		} else {
-
-	
-			if (1 === preg_match('~[0-9]~', $firstname) || 
-				1 === preg_match('~[0-9]~', $lastname)){
-				Print '<script>alert("Names should not contain numbers!");</script>'; // Prompts the user
+			if ( 1 != preg_match('/^[0-9]{5}$/', $zipcode) && strlen($zipcode) != 5) {
+				Print '<script>alert("Must input a valid zipcode!");</script>'; // Prompts the user
 			} else {
-				if (1 != preg_match('~[.]~', $email)) {
-					Print '<script>alert("Email must contain at least 1 period!");</script>'; // Prompts the user
-				} else {
-					if ( 1 != preg_match('/^[0-9]{5}$/', $zipcode) && strlen($zipcode) != 5) {
-						Print '<script>alert("Must input a valid zipcode!");</script>'; // Prompts the user
-					} else {
 
-						mysql_connect("localhost", "root") or die(mysql_error()); //Connect to server
-						mysql_select_db("FirstDataBase") or die("Cannot connect to database"); //Connect to database
-						$query = mysql_query("Select * from userinfo"); //Query the users table
-						while($row = mysql_fetch_array($query)) //display all rows from query
-						{
-							$table_users = $row['username']; // the first username row is passed on to $table_users, and so on until the query is finished
-							if($username == $table_users) // checks if there are any matching fields
-							{
-								$bool = false; // sets bool to false
-								Print '<script>alert("Username has been taken!");</script>'; //Prompts the user
-								//Print '<script>window.location.assign("joinUs.php");</script>'; // redirects to joinUs.php
-							}
-						}
-						if($bool) // checks if bool is true
-						{
-							mysql_query("INSERT INTO userinfo(firstname, lastname, username, password, email, address, city, state, zipcode) VALUES ('$firstname','$lastname','$username','$password','$email','$address','$city','$state','$zipcode')"); //Inserts the value to table users
-							
-							Print '<script>alert("Successfully joined!");</script>'; // Prompts the user
-							Print '<script>window.location.assign("joinUs.php");</script>'; // redirects to joinUs.php
-						}
+				mysql_connect("localhost", "root") or die(mysql_error()); //Connect to server
+				mysql_select_db("FirstDataBase") or die("Cannot connect to database"); //Connect to database
+				$query = mysql_query("Select * from userinfo"); //Query the users table
+				while($row = mysql_fetch_array($query)) //display all rows from query
+				{
+					$table_users = $row['username']; // the first username row is passed on to $table_users, and so on until the query is finished
+					if($username == $table_users) // checks if there are any matching fields
+					{
+						$bool = false; // sets bool to false
+						Print '<script>alert("Username has been taken!");</script>'; //Prompts the user
+						//Print '<script>window.location.assign("joinUs.php");</script>'; // redirects to joinUs.php
 					}
+				}
+				if($bool) // checks if bool is true
+				{
+					mysql_query("INSERT INTO userinfo(firstname, lastname, username, password, email, address, city, state, zipcode) VALUES ('$firstname','$lastname','$username','$password','$email','$address','$city','$state','$zipcode')"); //Inserts the value to table users
+					
+					Print '<script>alert("Successfully joined!");</script>'; // Prompts the user
+					Print '<script>window.location.assign("joinUs.php");</script>'; // redirects to joinUs.php
 				}
 			}
 		}
+	}
 }
 ?>
 
