@@ -177,7 +177,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	$city = mysql_real_escape_string($_POST['city']);
 	$state = mysql_real_escape_string($_POST['state']);
 	$zipcode = mysql_real_escape_string($_POST['zip-code']);
-	$agreement = mysql_real_escape_string($_POST['agreement']);
+	//$agreement = mysql_real_escape_string($_POST['agreement']);
 	$bool = true;
 
 	if (1 === preg_match('~[0-9]~', $firstname) || 
