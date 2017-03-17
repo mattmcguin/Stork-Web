@@ -164,7 +164,7 @@
 												<label for="agreement">I agree to the terms and services.</label>
 											</div>
 											<div  class="12u$">
-												<input style="display: block; margin: auto" type="submit" value="Sign Up!" class="special" />
+												<input style="display: block; margin: auto" type="submit" value="Sign Up and Subscribe!" class="special" />
 											</div>
 										</div>
 							</form>
@@ -196,7 +196,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		if (1 != preg_match('~[.]~', $email) || 1 != preg_match('~[@]~', $email)) {
 			Print '<script>alert("Email must contain at least 1 period and one @ symbol!");</script>'; // Prompts the user
 		} else {
-			if ( 1 != preg_match('/^[0-9]{5}$/', $zipcode) && strlen($zipcode) != 5) {
+			if ( 1 != preg_match('/^[0-9]{5}$/', $zipcode) || strlen($zipcode) != 5) {
 				Print '<script>alert("Must input a valid zipcode!");</script>'; // Prompts the user
 			} else {
 
