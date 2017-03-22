@@ -66,15 +66,15 @@
                 <?php echo($payerFirstName.' '.$payerLastName.', Thank you for your Order!');?><br/><br/>
                 <!--Shipping Address: -->
                 </h4>
-                <?php echo($recipientName);?><br/>
+             <!--   <?php echo($recipientName);?><br/>
                 <?php echo($addressLine1);?><br/>
                 <?php echo($addressLine2);?><br/>
                 <?php echo($city);?><br/>
                 <?php echo($state.'-'.$postalCode);?><br/>
-                <?php echo($countryCode);?>
+                <?php echo($countryCode);?>-->
 
                 <h4>Payment ID: <?php echo($paymentID);?> <br/>
-		Transaction ID : <?php echo($transactionID);?> <br/>
+		        Transaction ID : <?php echo($transactionID);?> <br/>
                 State : <?php echo($paymentState);?> <br/>
                 Total Amount: <?php echo($finalAmount);?> &nbsp;  <?php echo($currency);?> <br/>
             </h4>

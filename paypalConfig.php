@@ -14,8 +14,8 @@
     define("MERCHANT_ID","E9GCL5FX4TU2C");
 
     //PayPal REST App SANDBOX Client Id and Client Secret
-    define("SANDBOX_CLIENT_ID" , "AZazaq902xcELwoNkYxhzsbbdIX-jShBHYnKT0d43ODzXRvHdwkdjubUXO9yR20kYlVAFabTsZJuhKmM");
-    define("SANDBOX_CLIENT_SECRET", "EEsK8Bs1NKdA7VCxwO2tR1uMtUV5hhboEHKMR5HBkEa44rlJyeUlr7T12D5B1cMc2hqZ2daEVTOk6tWx");
+    define("SANDBOX_CLIENT_ID" , "AQAeBmSZJypthacyHwQIteHhw6cTTlYvt4v8-c_zHazqivsaPk6h3t5wWOBbTW9-hDoQm8rH5SuuaXxr");
+    define("SANDBOX_CLIENT_SECRET", "EGGi-F_FzCykA3nUa0hMZV-SAE6ZC6zGnsMsqGfpy0JB2DaF0QHIsHQBH1uNYTqUU8UKegm9hPkqr9nD");
 
     //Environments -Sandbox and Production/Live
     define("SANDBOX_ENV", "sandbox");

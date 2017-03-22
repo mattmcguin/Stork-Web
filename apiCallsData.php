@@ -22,23 +22,23 @@ $_SESSION['expressCheckoutPaymentData'] = '{
                                      {
                                         "amount":{
                                            "currency":"USD",
-                                           "total":"320",
+                                           "total":"10",
                                            "details":{
-                                              "shipping":"2",
-                                              "subtotal":"300",
-                                              "tax":"5",
-                                              "insurance":"10",
-                                              "handling_fee":"5",
-                                              "shipping_discount":"-2"
+                                              "shipping":"0",
+                                              "subtotal":"9",
+                                              "tax":"1",
+                                              "insurance":"0",
+                                              "handling_fee":"0",
+                                              "shipping_discount":"0"
                                            }
                                         },
                                         "description":"creating a payment",
                                         "item_list":{
                                            "items":[
                                               {
-                                                 "name":"Camera",
+                                                 "name":"Cameraa",
                                                  "quantity":"1",
-                                                 "price":"300",
+                                                 "price":"9",
                                                  "sku":"1",
                                                  "currency":"USD"
                                               }
