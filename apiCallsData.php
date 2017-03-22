@@ -22,10 +22,10 @@ $_SESSION['expressCheckoutPaymentData'] = '{
                                      {
                                         "amount":{
                                            "currency":"USD",
-                                           "total":"10",
+                                           "total":"1",
                                            "details":{
                                               "shipping":"0",
-                                              "subtotal":"10",
+                                              "subtotal":"1",
                                               "tax":"0",
                                               "insurance":"0",
                                               "handling_fee":"0",
@@ -38,7 +38,7 @@ $_SESSION['expressCheckoutPaymentData'] = '{
                                               {
                                                  "name":"Subscription",
                                                  "quantity":"1",
-                                                 "price":"10",
+                                                 "price":"1",
                                                  "sku":"1",
                                                  "currency":"USD"
                                               }
