@@ -1,9 +1,14 @@
 <!DOCTYPE HTML>
+
 <!--
 	Spectral by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+
+<?php
+include 'apiCallsData.php'
+?>
 <html>
 
 <head>
@@ -45,13 +50,26 @@
         <!-- Main -->
         <article id="main">
             <header>
-                <h2 style="color: #F7921E">Thank you for joining the mustering!</h2>
+                <h2 style="color: #F7921E">You have successfully joined! </h2>
+                <p>Subscribe Now to enjoy the Full Service!</p>
+                <form action="startPayment.php" method="POST">
+                <input type="hidden" name="csrf" value="<?php echo($_SESSION['csrf']);?>"/>
+                Camera:<input type="text" name="camera_amount" value="300" readonly></input><br>
+                Tax:<input type="text" name="tax" value="5" readonly></input><br>
+   Insurance:<input type="text" name="insurance" value="10" readonly></input><br>
+   Handling:<input type="text" name="handling_fee" value="5" readonly></input><br>
+   Est. Shipping:<input type="text" name="estimated_shipping" value="2" readonly></input><br>
+   Shipping Discount:<input type="text" name="shipping_discount" value="-2" readonly></input><br>
+   Total:<input type="text" name="total_amount" value="320" readonly></input><br>
+   Currency:<input type="text" name="currencyCodeType" value="USD" readonly></input><br>
+                <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-large.png" alt="Check out with PayPal"></input>
+                </form>
             </header>
             <section class="wrapper style5">
                 <div class="inner">
 
-                    <h3><center> You have successfully joined Stork!</center></h3>
-                    <p><center>To start using Stork, navigate to the Make a Request or Available Requests page!</center></p>
+                    <!--<h3><center> You have successfully joined Stork!</center></h3>
+                    <p><center>To start using Stork, navigate to the Make a Request or Available Requests page!</center></p>-->
                     <img src="images/storklogo.jpg" style="display: block; margin: auto" height="330" width="255" />
             </section>
         </article>

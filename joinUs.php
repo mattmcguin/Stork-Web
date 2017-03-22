@@ -219,9 +219,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 				{
 					mysql_query("INSERT INTO userinfo(firstname, lastname, username, password, email, address, city, state, zipcode) VALUES ('$firstname','$lastname','$username','$password','$email','$address','$city','$state','$zipcode')"); //Inserts the value to table users
 					
-					Print '<script>alert("Successfully joined!");</script>'; // Prompts the user
-					echo '<script type="text/javascript">window.location.href="some_url";</script>';
-					Print '<script>window.location.assign("joinUs.php");</script>'; // redirects to joinUs.php
+					// Print '<script>alert("Successfully joined!");</script>'; // Prompts the user
+					// echo '<script type="text/javascript">window.location.href="Receipt.php";</script>';die();
+					Print '<script>window.location.assign("Receipt.php");</script>'; // redirects to joinUs.php
 
 					$message = "Congratulations! You have joined Stork.";
 					mail($email, 'Welcome to Stork', $message);
