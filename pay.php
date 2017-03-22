@@ -58,6 +58,14 @@
     // $postalCode = filter_var($json_response['payer']['payer_info']['shipping_address']['postal_code'],FILTER_SANITIZE_SPECIAL_CHARS);
     // $countryCode= filter_var($json_response['payer']['payer_info']['shipping_address']['country_code'],FILTER_SANITIZE_SPECIAL_CHARS);
 	
+    $_SESSION['payerFirstName'] = $payerFirstName;
+    $_SESSION['payerLastName'] = $payerLastName;
+    $_SESSION['paymentID'] = $paymentID;
+    $_SESSION['paymentState'] = $paymentState;
+    $_SESSION['finalAmount'] = $finalAmount;
+    $_SESSION['transactionID'] = $transactionID;
+
+    include('emailReceipt.php');
     include('header.php');
 ?>
     <div class="row">

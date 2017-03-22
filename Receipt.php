@@ -53,16 +53,22 @@ include ('apiCallsData.php');
                 <h2 style="color: #F7921E">You have successfully joined! </h2>
                 <p>Subscribe Now to enjoy the Full Service!</p>
                 <form action="startPayment.php" method="POST">
-                <input type="hidden" name="csrf" value="<?php echo($_SESSION['csrf']);?>"/>
-                Subcription:<input type="text" name="camera_amount" value="10" readonly></input><br>
-                <!--Tax:<input type="text" name="tax" value="5" readonly></input><br>
-   Insurance:<input type="text" name="insurance" value="10" readonly></input><br>
-   Handling:<input type="text" name="handling_fee" value="5" readonly></input><br>-->
-   <!--Est. Shipping:<input type="text" name="estimated_shipping" value="2" readonly></input><br>
-   Shipping Discount:<input type="text" name="shipping_discount" value="-2" readonly></input><br>-->
-   Total:<input type="text" name="total_amount" value="10" readonly></input><br>
-   Currency:<input type="text" name="currencyCodeType" value="USD" readonly></input><br>
-                <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-large.png" alt="Check out with PayPal"></input>
+                    <input type="hidden" name="csrf" value="<?php echo($_SESSION['csrf']);?>"/>
+                    <div class="3u$" style="clear: none; margin-left: 38%">
+                        Subcription:<input type="text" style="text-align: center;" name="camera_amount" value="10" readonly></input>
+                    </div>
+                        <!--Tax:<input type="text" name="tax" value="5" readonly></input><br>
+                        Insurance:<input type="text" name="insurance" value="10" readonly></input><br>
+                        Handling:<input type="text" name="handling_fee" value="5" readonly></input><br>-->
+                        <!--Est. Shipping:<input type="text" name="estimated_shipping" value="2" readonly></input><br>
+                        Shipping Discount:<input type="text" name="shipping_discount" value="-2" readonly></input><br>-->
+                    <div class="3u$" style="clear: none; margin-left: 38%">
+                        Total:<input type="text" style="text-align: center;" name="total_amount" value="10" readonly></input>
+                    </div>
+                    <div class="3u$" style="clear: none; margin-left: 38%; padding-bottom: 20px;">
+                        Currency:<input type="text" style="text-align: center;"name="currencyCodeType" value="USD" readonly></input>
+                    </div>
+                    <input type="image" src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-large.png" alt="Check out with PayPal"></input>
                 </form>
             </header>
             <section class="wrapper style5">

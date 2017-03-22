@@ -179,6 +179,8 @@
 		</article>
 <?php
 
+session_start();
+
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 	$username = mysql_real_escape_string($_POST['username']);
 	$firstname = mysql_real_escape_string($_POST['first-name']);
@@ -190,6 +192,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	$state = mysql_real_escape_string($_POST['state']);
 	$zipcode = mysql_real_escape_string($_POST['zip-code']);
 	//$agreement = mysql_real_escape_string($_POST['agreement']);
+
+	//Create session variables
+	$_SESSION["username"] = $username;
+	$_SESSION["firstname"] = $firstname;
+	$_SESSION["lastname"] = $lastname;
+	$_SESSION["email"] = $email;
 	$bool = true;
 
 	if (1 === preg_match('~[0-9]~', $firstname) || 
@@ -223,10 +231,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 					
 					// Print '<script>alert("Successfully joined!");</script>'; // Prompts the user
 					// echo '<script type="text/javascript">window.location.href="Receipt.php";</script>';die();
+					include('emailMember.php');
 					Print '<script>window.location.assign("Receipt.php");</script>'; // redirects to joinUs.php
 
-					$message = "Congratulations! You have joined Stork.";
-					mail($email, 'Welcome to Stork', $message);
+					
 				
 
 				}
