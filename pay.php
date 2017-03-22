@@ -64,7 +64,8 @@
         <div class="col-md-4">
             <h4>
                 <?php echo($payerFirstName.' '.$payerLastName.', Thank you for your Order!');?><br/><br/>
-                Shipping Address: </h4>
+                <!--Shipping Address: -->
+                </h4>
                 <?php echo($recipientName);?><br/>
                 <?php echo($addressLine1);?><br/>
                 <?php echo($addressLine2);?><br/>
