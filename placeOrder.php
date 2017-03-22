@@ -49,6 +49,12 @@
                     </optgroup>
                 </select>-->
                 <br/>
+                <label>Total Amount: $</label>
+                <?php 
+                $expressCheckoutArray = json_decode($_SESSION['expressCheckoutPaymentData'], true);
+        		echo $expressCheckoutArray['transactions'][0]['amount']['total']; 
+                ?>
+                <br/>
                 <button type="submit" class="btn btn-primary">Confirm Order</button>
             </form>
             <br/>
