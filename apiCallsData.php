@@ -25,8 +25,8 @@ $_SESSION['expressCheckoutPaymentData'] = '{
                                            "total":"10",
                                            "details":{
                                               "shipping":"0",
-                                              "subtotal":"9",
-                                              "tax":"1",
+                                              "subtotal":"10",
+                                              "tax":"0",
                                               "insurance":"0",
                                               "handling_fee":"0",
                                               "shipping_discount":"0"
@@ -36,9 +36,9 @@ $_SESSION['expressCheckoutPaymentData'] = '{
                                         "item_list":{
                                            "items":[
                                               {
-                                                 "name":"Cameraa",
+                                                 "name":"Subscription",
                                                  "quantity":"1",
-                                                 "price":"9",
+                                                 "price":"10",
                                                  "sku":"1",
                                                  "currency":"USD"
                                               }
