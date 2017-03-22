@@ -223,6 +223,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 					echo '<script type="text/javascript">window.location.href="some_url";</script>';
 					Print '<script>window.location.assign("joinUs.php");</script>'; // redirects to joinUs.php
 
+					$message = "Congratulations! You have joined Stork.";
+					mail($email, 'Welcome to Stork', $message);
 				
 
 				}
