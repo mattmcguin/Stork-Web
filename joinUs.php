@@ -221,6 +221,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 					
 					Print '<script>alert("Successfully joined!");</script>'; // Prompts the user
 					Print '<script>window.location.assign("joinUs.php");</script>'; // redirects to joinUs.php
+
+				
+
 				}
 			}
 		}
