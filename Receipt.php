@@ -37,9 +37,9 @@ include ('apiCallsData.php');
                             <ul>
                                 <li><a href="index.html">Home</a></li>
                                 <li><a href="aboutUs.html" style="color: #F7921E">About Us</a></li>
-                                <li><a href="request.html">Make a Request</a></li>
+                           <!--     <li><a href="request.html">Make a Request</a></li>
 								<li><a href="Available Requests.html">Elements</a></li>
-                                <li><a href="My Requests.html">My Requests</a></li>
+                                <li><a href="My Requests.html">My Requests</a></li> -->
                             </ul>
                         </div>
                     </li>
