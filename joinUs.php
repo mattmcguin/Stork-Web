@@ -34,8 +34,9 @@
 								<li><a href="index.html">Home</a></li>
 								<li><a href="aboutUs.html">About Us</a></li>
 								<li><a href="joinUs.php#jumptocenter" style="color: #F7921E">Join Us</a></li>
-                                <li><a href="request.html">Make a Request</a></li>
-								<li><a href="Available Requests.html">Elements</a></li>
+                            <!--    <li><a href="request.html">Make a Request</a></li>
+								<li><a href="Available Requests.html">Available Requests</a></li>
+								<li><a href="My Requests.html">My Requests</a></li> -->
 							</ul>
 						</div>
 					</li>
