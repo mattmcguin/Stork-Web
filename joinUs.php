@@ -4,6 +4,8 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+
+<?php session_start(); ?>
 <html>
 
 <head>
@@ -178,8 +180,6 @@
 			</section>
 		</article>
 <?php
-
-session_start();
 
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 	$username = mysql_real_escape_string($_POST['username']);
