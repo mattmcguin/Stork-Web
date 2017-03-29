@@ -10,7 +10,7 @@
     // https://github.com/Synchro/PHPMailer
 
     // On MAC the path is usually:
-    $mailpath = '/Applications/XAMPP/xamppfiles/PHPMailer';
+    $mailpath = 'C:/xampp/htdocs/PHPMailer';
 
     
 
