@@ -8,7 +8,7 @@
     include('utilFunctions.php');
     include('paypalFunctions.php');
 
-
+    
     if( isset($_GET['paymentId']) && isset($_GET['PayerID'])){ //Proceed to Checkout or Mark flow
 
         //call to execute payment
@@ -88,7 +88,7 @@
                 Total Amount: <?php echo($finalAmount);?> &nbsp;  <?php echo($currency);?> <br/>
             </h4>
             <br/>
-            Return to <a href="storkRequests.php">home page</a>.
+            Return to <a href="changeStatusAfterSignUp.php">home page</a>.
         </div>
         <div class="col-md-4"></div>
     </div>
