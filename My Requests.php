@@ -4,6 +4,12 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+<?php session_start(); 
+if (isset($_SESSION['signInStatus'])) {
+if ($_SESSION['signInStatus']==0) Print '<script>window.location.assign("signIn.php");</script>';
+} else Print '<script>window.location.assign("signIn.php");</script>';
+
+?>
 <html>
 	<head>
 		<title>My Requests</title>
@@ -21,19 +27,16 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="index.html">Stork</a></h1>
+						<h1><a href="index.php">Stork</a></h1>
 						<nav id="nav">
 							<ul>
 								<li class="special">
 									<a href="#menu" class="menuToggle"><span>Menu</span></a>
 									<div id="menu">
 										<ul>
-											<li><a href="userindex.html">Home</a></li>
-											<li><a href="Available Requests.html"</a>Available Requests</li>
-											<li><a href="My Requests.html" style="color: #F7921E">My Requests</a></li>
-											<li><a href="My Stork Quests.html">My Stork Quests</a></li>
-											<li><input type="submit" value="Sign Out" class="special" /></li>
-
+											<li><a href="storkRequests.php">Home</a></li>
+											<li><a href="My Requests.php">My Requests</a></li>
+											<li><a href="destroySession.php">Sign Out</a></li>
 										</ul>
 									</div>
 								</li>
@@ -48,7 +51,7 @@
 							<p>View your request history</p>
 						</header>
 								<section>
-										<h4 style="color: #F7921E">My Requests</h4>
+										<!--<h4 style="color: #F7921E">My Requests</h4>-->
 									<!-- Comment this next line out if want to change formatting -->
 									<!-- <div class="table-wrapper"> -->
 									<!-- Un-Comment-out these next 2 lines if want to change formatting -->
