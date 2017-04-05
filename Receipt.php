@@ -63,7 +63,7 @@ include ('apiCallsData.php');
                         <!--Est. Shipping:<input type="text" name="estimated_shipping" value="2" readonly></input><br>
                         Shipping Discount:<input type="text" name="shipping_discount" value="-2" readonly></input><br>-->
                     <div class="3u$" style="clear: none; margin-left: 38%">
-                        Total:<input type="text" style="text-align: center;" name="total_amount" value="10" readonly></input>
+                        Total:<input type="text" style="text-align: center;" name="total_amount" value="1" readonly></input>
                     </div>
                     <div class="3u$" style="clear: none; margin-left: 38%; padding-bottom: 20px;">
                         Currency:<input type="text" style="text-align: center;"name="currencyCodeType" value="USD" readonly></input>
