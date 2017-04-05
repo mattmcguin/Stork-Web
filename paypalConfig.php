@@ -11,7 +11,7 @@
     define("LIVE_ENDPOINT", "https://api.paypal.com");
 
     //Merchant ID
-    define("MERCHANT_ID","E9GCL5FX4TU2C");
+    define("MERCHANT_ID","9SGR6FNEW6KZQ");
 
     //PayPal REST App SANDBOX Client Id and Client Secret
     define("SANDBOX_CLIENT_ID" , "AQAeBmSZJypthacyHwQIteHhw6cTTlYvt4v8-c_zHazqivsaPk6h3t5wWOBbTW9-hDoQm8rH5SuuaXxr");

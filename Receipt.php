@@ -55,7 +55,7 @@ include ('apiCallsData.php');
                 <form action="startPayment.php" method="POST">
                     <input type="hidden" name="csrf" value="<?php echo($_SESSION['csrf']);?>"/>
                     <div class="3u$" style="clear: none; margin-left: 38%">
-                        Subcription:<input type="text" style="text-align: center;" name="camera_amount" value="10" readonly></input>
+                        Subcription:<input type="text" style="text-align: center;" name="camera_amount" value="1" readonly></input>
                     </div>
                         <!--Tax:<input type="text" name="tax" value="5" readonly></input><br>
                         Insurance:<input type="text" name="insurance" value="10" readonly></input><br>
