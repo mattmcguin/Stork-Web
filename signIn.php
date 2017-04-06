@@ -130,6 +130,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		// echo '<script type="text/javascript">window.location.href="Receipt.php";</script>';die();
 		Print '<script>window.location.assign("storkRequests.php");</script>'; // redirects to joinUs.php			
 	}
+	else Print '<script>alert("Invalid Username and Password Combination!");</script>';
 }
 ?>
 
