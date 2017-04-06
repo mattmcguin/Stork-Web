@@ -67,16 +67,20 @@
 						
 							<form method="post" action="joinUs.php">
 										<div class="row uniform">
-											<div class="6u$">
-												<input type="text" name="first-name" id="first-name" required="true" value="<?php echo isset($_POST['first-name']) ? $_POST['first-name'] : '' ?>" placeholder="First Name" />
+											<div class="6u$" >
+												<b>First Name</b>
+												<input type="text" name="first-name" id="first-name" required="true" value="<?php echo isset($_POST['first-name']) ? $_POST['first-name'] : '' ?>" />
 											</div>
 											<div class="6u$" style="clear: none;">
-												<input type="text" name="last-name" id="last-name" required="true" value="<?php echo isset($_POST['last-name']) ? $_POST['last-name'] : '' ?>" placeholder="Last Name" />
+												<b>Last Name</b>
+												<input type="text" name="last-name" id="last-name" required="true" value="<?php echo isset($_POST['last-name']) ? $_POST['last-name'] : '' ?>" />
 											</div>
-											<div class="12u$">
-										        <input type="text" name="username" id="username" required="true" value="<?php echo isset($_POST['username']) ? $_POST['username'] : '' ?>" placeholder="Username" />
+											<div class="12u$" style="padding-top: 0;">
+												<b>Username</b>
+										        <input type="text" name="username" id="username" required="true" value="<?php echo isset($_POST['username']) ? $_POST['username'] : '' ?>" />
 											</div>
-											<div class="12u$">
+											<div class="12u$" style="padding-top: 0;">
+												<b>Password</b>
 												<input style="-moz-appearance: none;
 															-webkit-appearance: none;
 															-ms-appearance: none;
@@ -91,18 +95,22 @@
 															text-decoration: none;
 															height: 44px;
 															box-shadow: none;
-															width: 100%;" type="password" name="password" id="password" required="true" value="<?php echo isset($_POST['password']) ? $_POST['password'] : '' ?>" placeholder="Password" />
+															width: 100%;" type="password" name="password" id="password" required="true" value="<?php echo isset($_POST['password']) ? $_POST['password'] : '' ?>" />
 											</div>
-											<div class="12u$">
-												<input type="email" name="email" id="email" required="true" value="<?php echo isset($_POST['email']) ? $_POST['email'] : '' ?>" placeholder="Email" />
+											<div class="12u$" style="padding-top: 0;">
+												<b>Email</b>
+												<input type="email" name="email" id="email" required="true" value="<?php echo isset($_POST['email']) ? $_POST['email'] : '' ?>" />
 											</div>
-											<div class="12u$">
-												<input type="text" name="address" id="address" required="true" value="<?php echo isset($_POST['address']) ? $_POST['address'] : '' ?>" placeholder="Street Address" />
+											<div class="12u$" style="padding-top: 0;">
+												<b>Street Address</b>
+												<input type="text" name="address" id="address" required="true" value="<?php echo isset($_POST['address']) ? $_POST['address'] : '' ?>" />
 											</div>
-											<div class="12u$">
-												<input type="text" name="city" id="city" required="true" value="<?php echo isset($_POST['city']) ? $_POST['city'] : '' ?>" placeholder="City" />
+											<div class="12u$" style="padding-top: 0;">
+												<b>City</b>
+												<input type="text" name="city" id="city" required="true" value="<?php echo isset($_POST['city']) ? $_POST['city'] : '' ?>" />
 											</div>
-											<div class="6u$">
+											<div class="6u$" style="padding-top: 0;">
+												<b>State</b>
 												<div class="select-wrapper">
 													<select name="state" id="state" required="true">
 														<option value="AL">Alabama</option>
@@ -159,8 +167,9 @@
 													</select>
 												</div>
 											</div>
-											<div class="6u$" style="clear: none;">
-												<input type="text" name="zip-code" id="zip-code" required="true" value="<?php echo isset($_POST['zip-code']) ? $_POST['zip-code'] : '' ?>" placeholder="Zip Code" />
+											<div class="6u$" style="clear: none; padding-top: 0;">
+												<b>Zip Code</b>
+												<input type="text" name="zip-code" id="zip-code" required="true" value="<?php echo isset($_POST['zip-code']) ? $_POST['zip-code'] : '' ?>" />
 											</div>
 											<div class="12u$">
 												<input type="checkbox" id="agreement" name="agreement" required="true">

@@ -64,9 +64,11 @@
 							<form method="post" action="signIn.php">
 										<div class="row uniform">
 											<div class="12u$">
-										        <input type="text" name="username" id="username" required="true" value="<?php echo isset($_POST['username']) ? $_POST['username'] : '' ?>" placeholder="Username" />
+												<b>Username</b>
+										        <input type="text" name="username" id="username" required="true" value="<?php echo isset($_POST['username']) ? $_POST['username'] : '' ?>" />
 											</div>
-											<div class="12u$">
+											<div class="12u$" style="padding-top: 0;">
+												<b>Password</b>
 												<input style="-moz-appearance: none;
 															-webkit-appearance: none;
 															-ms-appearance: none;
@@ -81,13 +83,9 @@
 															text-decoration: none;
 															height: 44px;
 															box-shadow: none;
-															width: 100%;" type="password" name="password" id="password" required="true" value="<?php echo isset($_POST['password']) ? $_POST['password'] : '' ?>" placeholder="Password" />
+															width: 100%;" type="password" name="password" id="password" required="true" value="<?php echo isset($_POST['password']) ? $_POST['password'] : '' ?>" />
 											</div>
 
-											<div class="12u$">
-												<input type="checkbox" id="agreement" name="agreement" required="true">
-												<label for="agreement">I agree to the terms and services.</label>
-											</div>
 											<div  class="12u$">
 												<input style="display: block; margin: auto" type="submit" value="Sign In Now!" class="special" />
 											</div>
@@ -118,6 +116,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		$table_password = $row['password'];
 		if($username == $table_users && $table_password==$password) // checks if there are any matching fields
 		{
+			$_SESSION['email'] = $row['email'];
+			
 			$_SESSION['signInStatus']=1; // sets bool to false
 			break; //Prompts the user
 			//Print '<script>window.location.assign("joinUs.php");</script>'; // redirects to joinUs.php
@@ -125,6 +125,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	}
 	if($_SESSION['signInStatus']==1) // checks if bool is true
 	{
+		$_SESSION['username'] = $username;
+
 					//header('Location: homepage.php');
 		//Print '<script>alert("Successfully joined!");</script>'; // Prompts the user
 		// echo '<script type="text/javascript">window.location.href="Receipt.php";</script>';die();

@@ -9,6 +9,6 @@
     <body>
         <div class="container-fluid">
         <div class="well">
-            <h2 class="text-center">PayPal Checkout REST API</h2>
+            <h2 class="text-center">Stork Paypal Checkout</h2>
         </div>
 

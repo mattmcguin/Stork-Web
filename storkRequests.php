@@ -70,51 +70,42 @@ if ($_SESSION['signInStatus']==0) Print '<script>window.location.assign("signIn.
 												</tr>
 											</thead>
 											<tbody>
+												<form method="post" action="takeRequest.php">
 												<tr>
-													<td>Tired Tanya</td>
-													<td>Other</td>
-													<td>Mow the lawn</td>
-													<td>12.50</td>
-													<td>Normal</td>
-													<td>123 Street St.</td>
-													<td><a href="#" class="button special fit small">Take Request</a></li></td>
+													<td><input type="text" readonly style="display: none" name="name" value="Tired Tanya"/>Tired Tanya</td>
+													<td><input type="text" readonly style="display: none" name="category" value="Other"/>Other</td>
+													<td><input type="text" readonly style="display: none" name="description" value="Mow the lawn"/>Mow the lawn</td>
+													<td><input type="text" readonly style="display: none" name="price" value="$12.50"/>$12.50</td>
+													<td><input type="text" readonly style="display: none" name="priority" value="Normal"/>Normal</td>
+													<td><input type="text" readonly style="display: none" name="location" value="123 Street St."/>123 Street St.</td>
+													<td><input type="submit" value="Take Request" class="button special fit small" /></td>
+													<input type="text" style="display: none;" value="mjm6qv@virginia.edu" name="email"/>
 												</tr>
+												</form>
+												<form method="post" action="takeRequest.php">
 												<tr>
-													<td>Noshing Nora</td>
-													<td>Food</td>
-													<td>NEED FOOD NOW</td>
-													<td>50.00</td>
-													<td>High</td>
-													<td>Carr's Hill</td>
-													<td><a href="#" class="button special fit small">Take Request</a></li></td>
+													<td><input type="text" readonly style="display: none" name="name" value="Noshing Nora"/>Noshing Nora</td>
+													<td><input type="text" readonly style="display: none" name="category" value="Food" />Food</td>
+													<td><input type="text" readonly style="display: none" name="description" value="NEED FOOD NOW"/>NEED FOOD NOW</td>
+													<td><input type="text" readonly style="display: none" name="price" value="$50.00"/>$50.00</td>
+													<td><input type="text" readonly style="display: none" name="priority" value="High"/>High</td>
+													<td><input type="text" readonly style="display: none" name="location" value="Carr's Hill"/>Carr's Hill</td>
+													<td><input type="submit" value="Take Request" class="button special fit small" /></td>
+													<input type="text" style="display: none;" value="mjm6qv@virginia.edu" name="email"/>
 												</tr>
+												</form>
+												<form method="post" action="takeRequest.php">
 												<tr>
-													<td>DJ Dan</td>
-													<td>Errand</td>
-													<td>Pick up demo mix tapes, tapes already paid for</td>
-													<td>10.00</td>
-													<td>High</td>
-													<td>Trin</td>
-													<td><a href="#" class="button special fit small">Take Request</a></li></td>
+													<td><input type="text" readonly style="display: none" name="name" value="DJ Dan"/>DJ Dan</td>
+													<td><input type="text" readonly style="display: none" name="category" value="Errand" />Errand</td>
+													<td><input type="text" readonly style="display: none" name="description" value="Pick up demo mix tapes, tapes already paid for"/>Pick up demo mix tapes, tapes already paid for</td>
+													<td><input type="text" readonly style="display: none" name="price" value="$10.00"/>$10.00</td>
+													<td><input type="text" readonly style="display: none" name="priority" value="High"/>High</td>
+													<td><input type="text" readonly style="display: none" name="location" value="Trin"/>Trin</td>
+													<td><input type="submit" value="Take Request" class="button special fit small" /></td>
+													<input type="text" style="display: none;" value="mjm6qv@virginia.edu" name="email"/>
 												</tr>
-												<tr>
-													<td>Serious Sam</td>
-													<td>Services</td>
-													<td>Calculus Tutoring-Don't understand integrals</td>
-													<td>10.00</td>
-													<td>Normal</td>
-													<td>Clem 1st Floor</td>
-													<td><a href="#" class="button special fit small">Take Request</a></li></td>
-												</tr>
-												<tr>
-													<td>Studying Sally</td>
-													<td>Food</td>
-													<td>Buy and deliver medium chai latte</td>
-													<td>8.00</td>
-													<td>Low</td>
-													<td>Rice Hall</td>
-													<td><a href="#" class="button special fit small">Take Request</a></li></td>
-												</tr>
+												</form
 											</tbody>
 										</table>
 									</div>

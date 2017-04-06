@@ -51,11 +51,17 @@ if ($_SESSION['signInStatus']==0) Print '<script>window.location.assign("signIn.
 							<p>View your request history</p>
 						</header>
 								<section>
+									
 										<!--<h4 style="color: #F7921E">My Requests</h4>-->
 									<!-- Comment this next line out if want to change formatting -->
 									<!-- <div class="table-wrapper"> -->
 									<!-- Un-Comment-out these next 2 lines if want to change formatting -->
 								    <section class="wrapper style5">
+										<form method="post" action="userindex.html">
+										<div  class="12u$">
+												<input style="display: block; margin: auto" type="submit"value="Make a Request" class="special" />
+											</div>
+											</form><br/><br/>
 									<div class="inner">
 										<table>
 											<thead>
@@ -71,58 +77,56 @@ if ($_SESSION['signInStatus']==0) Print '<script>window.location.assign("signIn.
 												</tr>
 											</thead>
 											<tbody>
+												<form method="post" action="cancelRequest.php">
 												<tr>
-													<td>April 28, 2017</td>
-													<td>Other</td>
-													<td>Mow the lawn</td>
-													<td>12.50</td>
-													<td>Normal</td>
-													<td>123 Street St.</td>
-													<td>Incomplete</td>
-													<td><a href="#" class="button special fit small">Cancel Request</a></td>
+													<td><input type="text" readonly style="display: none" name="date" value="April 28, 2017"/>April 28, 2017</td>
+													<td><input type="text" readonly name="category" value="Other" style="display: none"/>Other</td>
+													<td><input type="text" readonly name="description" value="Books" style="display: none"/>Books</td>
+													<td><input type="text" readonly name="price" value="$12.50" style="display: none"/>$12.50</td>
+													<td><input type="text" readonly name="priority" value="Normal" style="display: none"/>Normal</td>
+													<td><input type="text" readonly name="location" value="123 Street St." style="display: none"/>123 Street St.</td>
+													<td><input type="text" readonly name="status" value="Incomplete" style="display: none"/>Incomplete</td>
+													<td><input type="submit" value="Cancel Request" class="button special fit small" /></td>
 												</tr>
+												</form>
+												<form method="post" action="cancelRequest.php">
 												<tr>
-													<td>May 6, 2017</td>
-													<td>Food</td>
-													<td>NEED FOOD NOW</td>
-													<td>50.00</td>
-													<td>High</td>
-													<td>Carr's Hill</td>
-													<td>Request Taken</td>
+													<td><input type="text" readonly style="display: none" name="date" value="May 6, 2017">May 6, 2017</td>
+													<td><input type="text" readonly style="display: none" name="category" value="Food">Food</td>
+													<td><input type="text" readonly style="display: none" name="description" value="NEED FOOD NOW">NEED FOOD NOW</td>
+													<td><input type="text" readonly style="display: none" name="price" value="$50.00">$50.00</td>
+													<td><input type="text" readonly style="display: none" name="priority" value="High">High</td>
+													<td><input type="text" readonly style="display: none" name="location" value="Carr's Hill'">Carr's Hill</td>
+													<td><input type="text" readonly style="display: none" name="status" value="Request Taken">Request Taken</td>
 													<!-- <td><a href="#" class="button special fit small">Cancel Request</a></li></td> -->
-													<td> <a href="#" class="button special fit disabled">Cancel Request</a></td>
+													<td><input type="submit" value="Cancel Request" class="button special fit small"/></td>
 												</tr>
+												</form>
+												<form method="post" action="cancelRequest.php">
 												<tr>
-													<td>May 27, 2017</td>
-													<td>Errand</td>
-													<td>Pick up demo mix tapes, tapes already paid for</td>
-													<td>10.00</td>
-													<td>High</td>
-													<td>Trin</td>
-													<td>Request Taken</td>
+													<td><input type="text" readonly style="display: none" name="date" value="May 27, 2017">May 27, 2017</td>
+													<td><input type="text" readonly style="display: none" name="category" value="Errand">Errand</td>
+													<td><input type="text" readonly style="display: none" name="description" value="Pick up demo mix tapes, tapes already paid for">Pick up demo mix tapes, tapes already paid for</td>
+													<td><input type="text" readonly style="display: none" name="price" value="$10.00">$10.00</td>
+													<td><input type="text" readonly style="display: none" name="priority" value="High">High</td>
+													<td><input type="text" readonly style="display: none" name="location" value="Trin">Trin</td>
+													<td><input type="text" readonly style="display: none"name="status" value="Request Taken">Request Taken</td>
 													<!-- <td><a href="#" class="button special fit small">Cancel Request</a></li></td> -->
-													<td> <a href="#" class="button special fit disabled">Cancel Request</a> </td>
+													<td><input type="submit" value="Cancel Request" class="button special fit small"/></td>
 												</tr>
+												</form>
+												<form method="post" action="cancelRequest.php">
 												<tr>
-													<td>September 25, 2017</td>
-													<td>Services</td>
-													<td>Calculus Tutoring-Don't understand integrals</td>
-													<td>10.00</td>
-													<td>Normal</td>
-													<td>Clem 1st Floor</td>
-													<td>Incomplete</td>
-													<td><a href="#" class="button special fit small">Cancel Request</a></td>
+													<td><input type="text" readonly style="display: none" name="date" value="September 25, 2017">September 25, 2017</td>
+													<td><input type="text" readonly style="display: none" name="category" value="Services">Services</td>
+													<td><input type="text" readonly style="display: none" name="description" value="Calculus Tutoring-Don't understand integrals">Calculus Tutoring-Don't understand integrals</td>
+													<td><input type="text" readonly style="display: none" name="price" value="$10.00">$10.00</td>
+													<td><input type="text" readonly style="display: none" name="priority" value="Normal">Normal</td>
+													<td><input type="text" readonly style="display: none" name="location" value="Clem 1st Floor">Clem 1st Floor</td>
+													<td><input type="text" readonly style="display: none" name="status" value="Incomplete">Incomplete</td>
+													<td><input type="submit" value="Cancel Request" class="button special fit small"/></td>
 												</tr>
-												<tr>
-													<td>September 26, 2017</td>
-													<td>Food</td>
-													<td>Buy and deliver medium chai latte</td>
-													<td>8.00</td>
-													<td>Low</td>
-													<td>Rice Hall</td>
-													<td>Incomplete</td>
-													<td><a href="#" class="button special fit small">Cancel Request</a></td>
-												</tr>
+												</form
 											</tbody>
 										</table>
 									</div>
