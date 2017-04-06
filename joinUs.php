@@ -5,7 +5,11 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 
-<?php session_start(); ?>
+<?php session_start(); 
+if (isset($_SESSION['signInStatus'])) {
+if ($_SESSION['signInStatus']==1) Print '<script>window.location.assign("storkRequests.php");</script>';
+} 
+?>
 <html>
 
 <head>
@@ -234,7 +238,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 				if($bool) // checks if bool is true
 				{
 					mysql_query("INSERT INTO userinfo(firstname, lastname, username, password, email, address, city, state, zipcode) VALUES ('$firstname','$lastname','$username','$password','$email','$address','$city','$state','$zipcode')"); //Inserts the value to table users
-					
+					$_SESSION['signInStatus']=1;
 					// Print '<script>alert("Successfully joined!");</script>'; // Prompts the user
 					// echo '<script type="text/javascript">window.location.href="Receipt.php";</script>';die();
 					include('emailMember.php');
