@@ -5,7 +5,12 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 
-<?php session_start(); ?>
+<?php session_start(); 
+if (isset($_SESSION['signInStatus'])) {
+if ($_SESSION['signInStatus']==1) Print '<script>window.location.assign("storkRequests.php");</script>';
+} 
+
+?>
 <html>
 
 <head>
