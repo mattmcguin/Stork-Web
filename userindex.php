@@ -4,6 +4,12 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+<?php session_start(); 
+if (isset($_SESSION['signInStatus'])) {
+if ($_SESSION['signInStatus']==0) Print '<script>window.location.assign("signIn.php");</script>';
+} else Print '<script>window.location.assign("signIn.php");</script>';
+
+?>
 <html>
 
 <head>
@@ -24,16 +30,15 @@
         <!-- Header -->
         <header id="header" class="alt">
             <h1><a href="index.html">Stork</a></h1>
-            <nav id="nav">
+            <nav id="nav"> 
                 <ul>
                     <li class="special">
                         <a href="#menu" class="menuToggle"><span>Menu</span></a>
                         <div id="menu">
                             <ul>
-                                <li><a href="userindex.html" style="color: #F7921E">Home</a></li>
-                                <!-- <li><a href="joinUs.php#jumptocenter">Join Us</a></li> -->
-                                <li><a href="My Requests.html">My Requests</a></li>
-                                <li><input type="submit" value="Sign Out" class="special" /></li>
+                                <li><a href="storkRequests.php" style="color: #F7921E">Home</a></li>
+                                <li><a href="My Requests.php">My Requests</a></li>
+                                <li><a href="destroySession.php">Sign Out</a></li>
                             </ul>
                         </div>
                     </li>

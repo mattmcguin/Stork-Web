@@ -57,7 +57,7 @@ if ($_SESSION['signInStatus']==0) Print '<script>window.location.assign("signIn.
 									<!-- <div class="table-wrapper"> -->
 									<!-- Un-Comment-out these next 2 lines if want to change formatting -->
 								    <section class="wrapper style5">
-										<form method="post" action="userindex.html">
+										<form method="post" action="userindex.php">
 										<div  class="12u$">
 												<input style="display: block; margin: auto" type="submit"value="Make a Request" class="special" />
 											</div>
